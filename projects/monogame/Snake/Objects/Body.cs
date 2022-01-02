@@ -33,7 +33,7 @@ namespace Snake.Objects
         private void UpdateBoundingBox()
         {
             _boundingbox = Global_Functions.GetPosition(_X, _Y);
-            _drawingbox = new Rectangle(_boundingbox.X, _boundingbox.Y, _boundingbox.Width - Settings.DRAWING_OFFSET, _boundingbox.Height - Settings.DRAWING_OFFSET);
+            _drawingbox = new Rectangle(_boundingbox.X, _boundingbox.Y, _boundingbox.Width - Settings.SNAKE_DRAWING_OFFSET, _boundingbox.Height - Settings.SNAKE_DRAWING_OFFSET);
         }
 
         public void Update(Vector2 Position)

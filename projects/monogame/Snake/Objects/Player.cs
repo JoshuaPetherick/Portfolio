@@ -69,7 +69,7 @@ namespace Snake.Objects
         private void UpdateBoundingBox()
         {
             _boundingbox = Global_Functions.GetPosition(_X, _Y);
-            _drawingbox = new Rectangle(_boundingbox.X, _boundingbox.Y, _boundingbox.Width - Settings.DRAWING_OFFSET, _boundingbox.Height - Settings.DRAWING_OFFSET);
+            _drawingbox = new Rectangle(_boundingbox.X, _boundingbox.Y, _boundingbox.Width - Settings.SNAKE_DRAWING_OFFSET, _boundingbox.Height - Settings.SNAKE_DRAWING_OFFSET);
         }
 
         public bool Update(GameTime gameTime)
@@ -80,7 +80,7 @@ namespace Snake.Objects
             if (_changeDirection)
             {
                 KeyboardState ks = Keyboard.GetState();
-                if (ks.IsKeyDown(Keys.W))
+                if (ks.IsKeyDown(Keys.W) || ks.IsKeyDown(Keys.Up))
                 {
                     if (_direction != Settings.DIRECTION.South)
                     {
@@ -88,7 +88,7 @@ namespace Snake.Objects
                         _changeDirection = false;
                     }
                 }
-                if (ks.IsKeyDown(Keys.D))
+                if (ks.IsKeyDown(Keys.D) || ks.IsKeyDown(Keys.Right))
                 {
                     if (_direction != Settings.DIRECTION.West)
                     {
@@ -96,7 +96,7 @@ namespace Snake.Objects
                         _changeDirection = false;
                     }
                 }
-                if (ks.IsKeyDown(Keys.S))
+                if (ks.IsKeyDown(Keys.S) || ks.IsKeyDown(Keys.Down))
                 {
                     if (_direction != Settings.DIRECTION.North)
                     {
@@ -104,7 +104,7 @@ namespace Snake.Objects
                         _changeDirection = false;
                     }
                 }
-                if (ks.IsKeyDown(Keys.A))
+                if (ks.IsKeyDown(Keys.A) || ks.IsKeyDown(Keys.Left))
                 {
                     if (_direction != Settings.DIRECTION.East)
                     {

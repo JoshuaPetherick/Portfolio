@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome!
+This website represents my online portfolio of projects which I've worked on during my free time. Each project will be listed below alongside a description of what they are and how to play them. 
 
-You can use the [editor on GitHub](https://github.com/JoshuaPetherick/Portfolio/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### Projects
+#### Snake
+This is a re-creation of the classic Snake game using the MonoGame Framework. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Use the WASD or Arrow Keys to move your snake around. Collide with the apples to grow your snake. Each Apple consumed will cause the game to speed up. You win if you fill up every available space and lose if you collide with a tail piece. 
 
-### Markdown
+[![Snake](/assets/snake.gif)](/projects/monogame/Snake)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JoshuaPetherick/Portfolio/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Click the image above to view the Project files. 

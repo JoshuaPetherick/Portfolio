@@ -27,6 +27,7 @@ namespace Snake
         public static Color FONT_COLOUR = Color.Cyan;
         public static Color SNAKE_COLOUR = Color.White;
         public static Color APPLE_COLOUR = Color.Red;
-        public const int DRAWING_OFFSET = 1;
+        public const int SNAKE_DRAWING_OFFSET = 1;
+        public const int APPLE_DRAWING_OFFSET = 6;
     }
 }

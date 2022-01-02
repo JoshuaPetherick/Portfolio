@@ -36,7 +36,7 @@ namespace Snake.Objects
         private void UpdateBoundingBox()
         {
             _boundingbox = Global_Functions.GetPosition((int)_position.X, (int)_position.Y);
-            _drawingbox = new Rectangle(_boundingbox.X, _boundingbox.Y, _boundingbox.Width - Settings.DRAWING_OFFSET, _boundingbox.Height - Settings.DRAWING_OFFSET);
+            _drawingbox = new Rectangle(_boundingbox.X + (Settings.APPLE_DRAWING_OFFSET / 2), _boundingbox.Y + (Settings.APPLE_DRAWING_OFFSET / 2), _boundingbox.Width - Settings.APPLE_DRAWING_OFFSET, _boundingbox.Height - Settings.APPLE_DRAWING_OFFSET);
         }
 
         public bool Update(Player snake)
