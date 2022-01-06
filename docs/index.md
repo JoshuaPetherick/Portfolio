@@ -1,7 +1,3 @@
-<head>
-  <link rel="shortcut icon" type="image/png" href="assets/icon/JPFavicon.png">
-</head>
-
 ## Welcome!
 This website represents my online portfolio of projects which I've worked on during my free time. Each project will be listed below alongside a description of what they are and how to play them. 
 
